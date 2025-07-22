@@ -1,0 +1,171 @@
+body{
+    font-family: 'oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+  background: black;
+  color: whitesmoke;
+  width: 100%;
+  overflow-x: hidden;
+}
+a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: orange;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: whitesmoke;
+}
+header{
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #222;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.running_bike {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.running_bike img {
+  width: 9rem;
+  height: 5rem;
+  border-radius: 8px;
+  position: relative;
+  animation-name:moveBike;
+  animation-duration: 6s;
+}
+@keyframes moveBike {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100vw)rotate(-30deg);
+  }
+}
+.nav {justify-self: start;
+  display: flex;
+  align-items: center;
+  margin-right: 3rem;
+}
+.nav a {
+  margin-left: 1rem;
+}
+ul {
+    display: flex;
+  list-style: none; 
+  margin-right: 3rem;
+}
+li {
+    margin: 1rem;
+}
+.logo img{
+    width: 11rem;
+}
+main{
+  width: 100%;
+  background: url("https://www.harley-davidson.com/content/dam/h-d/images/content-images/media-card/2024/ca-moto-training-02-mc.jpg?impolicy=myresize&rw=1000");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+} 
+.grid {justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 300px));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+.card {
+  background: #222;
+  padding: 1rem;
+  border-radius: 8px;
+  animation: fadeInUp 2s ease both;
+}
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+h2{
+  color: orange;
+}
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+}
+.post_main {
+ height: 68.7vh;
+}
+.post_content {
+  width: 60%;
+  margin: 0 auto;
+  padding: 2rem;
+  background: rgba(34, 34, 34, 0.8);
+  border-radius: 8px;
+}
+.sidebar{
+  margin: 2rem auto;
+  justify-self: center;
+  width: 30%;
+  top: 6rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+}
+@media (max-width: 600px) {
+  header {
+    width: 100%;
+    flex-direction: row;
+    align-self: start;
+    align-items: flex-start;
+  }
+
+  .nav {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-right: 3rem;
+    
+  }
+  .logo img {
+    width: 8rem;
+    height: 5rem;
+  }
+  ul{
+    flex-direction: row;
+    align-items: flex-start;
+   
+  }
+  li {
+    margin: 0.5rem;
+  }
+  h2{
+    color: orange;
+  }
+    .grid {
+      grid-template-columns: 1fr;}
+    main {
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+@keyframes fadeInUp {
+
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  } 
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
