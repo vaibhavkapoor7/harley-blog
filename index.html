@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/blogstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -17,15 +18,27 @@
         <div class="logo"><img src="images/Harley-Davidson-Logo.png" alt=" harley logo"></div>
         <div class="running_bike">
             <img src="images/bike.png" alt="running bike">
-
         </div>
-        <nav class="navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="posts.html">Posts</a></li>
-                <li><a href="#">Newsletter</a></li>
-            </ul>
-        </nav>
+<nav class="topnav" id="myTopnav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="posts.html">Posts</a></li>
+        <li><a href="#">Newsletter</a></li>
+    </ul>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+      &#9776;
+    </a>
+</nav>
+        <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 
     </header>
     <main>
@@ -77,7 +90,12 @@
     <footer class="footer">
         <p>&copy; 2025 Vaibhav kapoor</p>
     </footer>
-
+    <script>
+function toggleNav() {
+  var nav = document.querySelector('.topnav');
+  nav.classList.toggle('responsive');
+}
+</script>
 </body>
 
 </html>
