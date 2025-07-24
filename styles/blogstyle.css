@@ -21,7 +21,7 @@ header{
   height: 6rem;
   display: flex;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  /* padding: 1rem 2rem; */
   background: #222;
   position: sticky;
   top: 0;
@@ -51,10 +51,10 @@ header{
   }
 }
 ul {
+
   list-style: none;
   display: flex;
   align-items: center;
-  margin: 0;
   padding-right: 2rem;
 }
 li {
@@ -74,56 +74,13 @@ li {
   background-color: #ddd;
   color: black;
 }
-
-/* Add an active class to highlight the current page */
 .topnav a.active {
   background-color: #04AA6D;
   color: white;
 }
-
-/* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
 }
-
-@media (max-width: 600px) {
-  .topnav ul {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  .topnav.responsive ul {
-    display: flex;
-    background: #222;
-  }
-  .topnav.responsive ul li {
-    width: 100%;
-    text-align: left;
-    border-bottom: 1px solid #333;
-  }
-  .topnav.responsive ul li a {
-    display: block;
-    padding: 14px 16px;
-    color: orange;
-    background: none;
-  }
-  .topnav .icon {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 14px 16px;
-    cursor: pointer;
-    color: orange;
-    font-size: 24px;
-    background: none;
-    border: none;
-    z-index: 2;
-  }
-}
-
 .logo img{
     width: 11rem;
 }
@@ -163,7 +120,7 @@ h2{
   background: #222;
 }
 .post_main {
- height: 68.7vh;
+ height: 80.4vh;
  display: flex;
   justify-content: space-between;
   padding: 2rem;
@@ -201,11 +158,9 @@ h2{
     color: orange;
   }
   .grid {
-      grid-template-columns: 1fr;}
-  main {
-      width: 100%;
-      background-size: cover;
-      background-position: center;
+      grid-template-columns: 1fr;
+      padding: 0.5rem;
+      overflow-x: hidden;
     }
   
    
@@ -220,9 +175,41 @@ h2{
     display: block;
     text-align: left;
   }
-}
-  
-
+  .topnav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin-top: 50px;
+  }
+  .topnav.responsive ul {
+    display: flex;
+    background: #222;
+  }
+  .topnav.responsive ul li {
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #333;
+  }
+  .topnav.responsive ul li a {
+    display: block;
+    padding: 14px 16px;
+    color: orange;
+    background: none;
+  }
+  .topnav .icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 14px 16px;
+    cursor: pointer;
+    color: orange;
+    font-size: 24px;
+    background: none;
+    border: none;
+    z-index: 2;
+  }}
 @keyframes fadeInUp {
 
   from {
