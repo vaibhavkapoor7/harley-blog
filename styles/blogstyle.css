@@ -1,225 +1,256 @@
-body{
-    font-family: 'oswald', sans-serif;  /*using Google Fonts */
-    margin: 0; /*magin 0 */
-    padding: 0; /*padding 0 */
-  background: black;  /*using black background */
-  color: whitesmoke; /*using whitesmoke color */
-  overflow-x: hidden;
+body {
+  font-family: 'Roboto', sans-serif; /* This makes all the words look nice and smooth. */
+  margin: 0; /* No space around the edges of the page. */
+  padding: 0; /* No space inside the edges of the page. */
+  background: black; /* The whole page is colored black. */
+  color: whitesmoke; /* All the words are colored white so we can see them on black. */
+  overflow-x: hidden; /* If something tries to go off the side, we hide it. */
 }
+
 a {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  color: orange;
-  text-decoration: none;
-  transition: color 0.3s ease;
+  font-family: 'Roboto', sans-serif; /* The links use the same nice letters. */
+  font-weight: 500; /* The link words are a little thicker. */
+  color: orange; /* The links are orange, like an orange fruit! */
+  text-decoration: none; /* No lines under the links. */
+  transition: color 0.3s ease; /* When you touch a link, it changes color smoothly. */
 }
+
 a:hover {
-  color: whitesmoke;
+  color: whitesmoke; /* When you point at a link, it turns white. */
 }
-header{
-  width: 100%;
-  height: 6rem;
-  display: flex;
-  justify-content: space-between;
-  /* padding: 1rem 2rem; */
-  background: #222;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+
+header {
+  width: 100%; /* The top part goes all the way across. */
+  height: 6rem; /* The top part is tall. */
+  display: flex; /* The things inside line up in a row. */
+  justify-content: space-between; /* The things inside spread out to the sides. */
+  background: #222; /* The top part is dark gray. */
+  position: sticky; /* The top part stays at the top when you scroll. */
+  top: 0; /* The top part is right at the top. */
+  z-index: 1000; /* The top part stays above other things. */
 }
+
 .running_bike {
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-  position: relative;
- 
+  flex-grow: 1; /* This part can get bigger if it needs to. */
+  display: flex; /* The things inside line up in a row. */
+  align-items: center; /* The things inside are in the middle up and down. */
+  position: relative; /* We can move things inside this part. */
 }
+
 .running_bike img {
-  width: 8rem;
-  border-radius: 8px;
-   position: relative;
-  animation-name:moveBike;
-  animation-duration: 6s;
+  width: 8rem; /* The bike picture is not too big, not too small. */
+  border-radius: 8px; /* The bike picture has rounded corners. */
+  position: relative; /* We can move the bike picture. */
+  animation-name: moveBike; /* The bike picture can move! */
+  animation-duration: 6s; /* The bike moves for 6 seconds. */
 }
+
 @keyframes moveBike {
   from {
-    transform: translateX(0);
+    transform: translateX(0); /* The bike starts here. */
   }
   to {
-    transform: translateX(150vh) rotate(-30deg); 
+    transform: translateX(150vh) rotate(-30deg); /* The bike goes far and turns a little. */
   }
 }
-ul {
 
-  list-style: none;
-  display: flex;
-  align-items: center;
-  padding-right: 2rem;
+ul {
+  list-style: none; /* No dots in front of the list. */
+  display: flex; /* The list items line up in a row. */
+  align-items: center; /* The list items are in the middle up and down. */
+  padding-right: 2rem; /* There is space on the right side. */
 }
+
 li {
-  padding-top: 20px;
+  padding-top: 20px; /* Each list item has space on top. */
 }
+
 .topnav a {
-  float: left;
-  display: flex;
-  flex-direction: column;
-  color: orange;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+  float: left; /* The links go to the left. */
+  display: flex; /* The links line up in a row. */
+  flex-direction: column; /* The links stack up and down. */
+  color: orange; /* The links are orange. */
+  text-align: center; /* The words are in the middle. */
+  padding: 14px 16px; /* There is space inside the links. */
+  text-decoration: none; /* No lines under the links. */
+  font-size: 17px; /* The words are a good size. */
 }
+
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #ddd; /* When you point at a link, it gets a light background. */
+  color: black; /* The link turns black when you point at it. */
 }
+
 .topnav a.active {
-  background-color: #04AA6D;
-  color: white;
+  background-color: #04AA6D; /* The special link is green. */
+  color: white; /* The special link words are white. */
 }
+
 .topnav .icon {
-  display: none;
+  display: none; /* The menu button is hidden for now. */
 }
-.logo img{
-    width: 10rem;
+
+.logo img {
+  width: 10rem; /* The logo picture is big. */
 }
-main{
-  width: 100%;
-  background: url("https://www.harley-davidson.com/content/dam/h-d/images/content-images/media-card/2024/ca-moto-training-02-mc.jpg?impolicy=myresize&rw=1000");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-  
-} 
+
+main {
+  width: 100%; /* The main part goes all the way across. */
+  background: url("https://www.harley-davidson.com/content/dam/h-d/images/content-images/media-card/2024/ca-moto-training-02-mc.jpg?impolicy=myresize&rw=1000"); /* The main part has a cool picture. */
+  background-size: cover; /* The picture fills the whole space. */
+  background-position: center; /* The picture is in the middle. */
+  background-repeat: no-repeat; /* The picture doesn’t repeat. */
+  box-sizing: border-box; /* Everything fits nicely inside. */
+}
+
 .grid {
-  justify-content: center;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
-  overflow-x: hidden;
+  justify-content: center; /* The boxes are in the middle. */
+  display: grid; /* The boxes are in a grid. */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* The boxes change size to fit. */
+  gap: 1.5rem; /* There is space between the boxes. */
+  padding: 2rem; /* There is space around the boxes. */
+  overflow-x: hidden; /* If boxes go off the side, we hide them. */
 }
+
 .card {
-  background: #222;
-  padding: 1rem;
-  border-radius: 8px;
-  animation: fadeInUp 2s ease both;
+  background: #222; /* The card is dark gray. */
+  padding: 1rem; /* There is space inside the card. */
+  border-radius: 8px; /* The card has rounded corners. */
+  animation: fadeInUp 2s ease both; /* The card fades in and moves up. */
 }
+
 .card img {
-  width: 100%;
-  border-radius: 8px;
+  width: 100%; /* The card picture fills the card. */
+  border-radius: 8px; /* The card picture has rounded corners. */
 }
-h2{
-  color: orange;
+
+h2 {
+  color: orange; /* The big titles are orange. */
 }
+
 .footer {
-  text-align: center;
-  padding: 1rem;
-  background: #222;
+  text-align: center; /* The words are in the middle. */
+  padding: 1rem; /* There is space inside the footer. */
+  background: #222; /* The footer is dark gray. */
 }
+
 .post_main {
- height: 80.4vh;
- display: flex;
-  justify-content: space-between;
-  padding: 2rem;
+  height: 80.4vh; /* The main post part is tall. */
+  display: flex; /* The things inside line up in a row. */
+  justify-content: space-between; /* The things inside spread out. */
+  padding: 2rem; /* There is space around the post. */
 }
+
 .post_content {
-  width: 60%;
-  margin: 0 auto;
-  padding: 2rem;
-  background: rgba(34, 34, 34, 0.8);
-  border-radius: 8px;
+  width: 60%; /* The post is not too wide. */
+  margin: 0 auto; /* The post is in the middle. */
+  padding: 2rem; /* There is space inside the post. */
+  background: rgba(34, 34, 34, 0.8); /* The post has a see-through dark background. */
+  border-radius: 8px; /* The post has rounded corners. */
 }
-.sidebar{
-  display: flex;
-  flex-direction: column;
-  align-items: center;;
-  justify-self: center;
-  width: 30%;
-  padding: 1rem;
-  background: rgba(0, 0, 0, 0.8);
-  border-radius: 8px;
+
+.sidebar {
+  display: flex; /* The sidebar things line up. */
+  flex-direction: column; /* The sidebar things stack up and down. */
+  align-items: center; /* The sidebar things are in the middle. */
+  justify-self: center; /* The sidebar is in the middle. */
+  width: 30%; /* The sidebar is not too wide. */
+  padding: 1rem; /* There is space inside the sidebar. */
+  background: rgba(0, 0, 0, 0.8); /* The sidebar has a see-through black background. */
+  border-radius: 8px; /* The sidebar has rounded corners. */
 }
+
 @media (max-width: 600px) {
   header {
-    width: 100%;
-    flex-direction: row;
-    align-self: start;
-    align-items: flex-start;
+    width: 100%; /* The top part goes all the way across. */
+    flex-direction: row; /* The things inside line up in a row. */
+    align-self: start; /* The top part starts at the top. */
+    align-items: flex-start; /* The things inside are at the top. */
   }
 
   .logo img {
-    width: 8rem;
-    height: 5rem;
+    width: 8rem; /* The logo is smaller. */
+    height: 5rem; /* The logo is not too tall. */
   }
-  h2{
-    color: orange;
+
+  h2 {
+    color: orange; /* The big titles are orange. */
   }
+
   .grid {
-      grid-template-columns: 1fr;
-      padding: 0.5rem;
-      overflow-x: hidden;
-    }
-  
-   
-  .topnav.responsive {position: relative;}
+    grid-template-columns: 1fr; /* The boxes are in one column. */
+    padding: 0.5rem; /* There is less space around the boxes. */
+    overflow-x: hidden; /* If boxes go off the side, we hide them. */
+  }
+
+  .topnav.responsive {
+    position: relative; /* We can move things inside the menu. */
+  }
+
   .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+    position: absolute; /* The menu button is in a special spot. */
+    right: 0; /* The menu button is on the right. */
+    top: 0; /* The menu button is at the top. */
   }
+
   .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
+    float: none; /* The links don’t float. */
+    display: block; /* The links stack up and down. */
+    text-align: left; /* The words are on the left. */
   }
+
   .topnav ul {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    padding: 0;
-    margin-top: 50px;
+    display: none; /* The menu is hidden. */
+    flex-direction: column; /* The menu items stack up and down. */
+    width: 100%; /* The menu is wide. */
+    padding: 0; /* No space inside the menu. */
+    margin-top: 50px; /* There is space above the menu. */
   }
+
   .topnav.responsive ul {
-    display: flex;
-    background: #222;
+    display: flex; /* The menu shows up. */
+    background: #222; /* The menu is dark gray. */
   }
+
   .topnav.responsive ul li {
-    width: 100%;
-    text-align: left;
-    border-bottom: 1px solid #333;
+    width: 100%; /* The menu items are wide. */
+    text-align: left; /* The words are on the left. */
+    border-bottom: 1px solid #333; /* There is a line under each item. */
   }
+
   .topnav.responsive ul li a {
-    display: block;
-    padding: 14px 16px;
-    color: orange;
-    background: none;
+    display: block; /* The links stack up and down. */
+    padding: 14px 16px; /* There is space inside the links. */
+    color: orange; /* The links are orange. */
+    background: none; /* No background for the links. */
   }
+
   .topnav .icon {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 14px 16px;
-    cursor: pointer;
-    color: orange;
-    font-size: 24px;
-    background: none;
-    border: none;
-    z-index: 2;
-  }}
-@keyframes fadeInUp {
-
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  } 
-  to {
-    opacity: 1;
-    transform: translateY(0);
+    display: block; /* The menu button shows up. */
+    position: absolute; /* The menu button is in a special spot. */
+    right: 0; /* The menu button is on the right. */
+    top: 0; /* The menu button is at the top. */
+    padding: 14px 16px; /* There is space inside the button. */
+    cursor: pointer; /* The mouse turns into a hand when you point. */
+    color: orange; /* The button is orange. */
+    font-size: 24px; /* The button is big. */
+    background: none; /* No background for the button. */
+    border: none; /* No border for the button. */
+    z-index: 2; /* The button stays on top. */
   }
+}
 
-}.topnav {
-  position: relative;
+@keyframes fadeInUp {
+  from {
+    opacity: 0; /* The card starts invisible. */
+    transform: translateY(30px); /* The card starts lower. */
+  }
+  to {
+    opacity: 1; /* The card ends up visible. */
+    transform: translateY(0); /* The card ends up in the right spot. */
+  }
+}
+
+.topnav {
+  position: relative; /* We can move things inside the menu. */
 }
