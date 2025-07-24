@@ -19,26 +19,16 @@
         <div class="running_bike">
             <img src="images/bike.png" alt="running bike">
         </div>
-<nav class="topnav" id="myTopnav">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="posts.html">Posts</a></li>
-        <li><a href="#">Newsletter</a></li>
-    </ul>
-    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
-      &#9776;
-    </a>
-</nav>
-        <script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
+        <nav class="topnav" id="myTopnav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="posts.html">Posts</a></li>
+                <li><a href="#">Newsletter</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                &#9776;
+            </a>
+        </nav>
 
     </header>
     <main class="post_main">
@@ -48,11 +38,18 @@ function myFunction() {
             <h1>The Legend of Harley</h1>
             <p>Harley Davidson bikes are known for their thunderous engines and rebellious spirit</p>
             <a class="read_more" href="index.html">Back To Home</a>
+        </div>
     </main>
     <footer class="footer">
         <p>&copy; 2025 Vaibhav kapoor</p>
     </footer>
 
+    <script>
+        function toggleNav() {
+            var nav = document.querySelector('.topnav');
+            nav.classList.toggle('responsive');
+        }
+    </script>
 </body>
 
 </html>
