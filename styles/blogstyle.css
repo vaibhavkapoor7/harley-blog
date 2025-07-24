@@ -129,19 +129,26 @@ h2 {
 }
 
 .footer {
+  width: 100%; /* The footer goes all the way across. */
+  height: 2rem; /* The footer is not too tall. */
+  grid-area: footer; /* The footer goes in the footer area. */
   text-align: center; /* The words are in the middle. */
   padding: 1rem; /* There is space inside the footer. */
   background: #222; /* The footer is dark gray. */
 }
 
 .post_main {
-  height: 80.4vh; /* The main post part is tall. */
+  display: grid; /* The main post part is a grid. */
+  grid-template-columns: 1fr 1fr; /* The post and sidebar are side by side. */
+  grid-template-areas: "sidebar content" "footer footer"; /* The sidebar is on the left, the content is on the right, and the footer is below both. */
+  height: 76.4vh; /* The main post part is tall. */
   display: flex; /* The things inside line up in a row. */
   justify-content: space-between; /* The things inside spread out. */
   padding: 2rem; /* There is space around the post. */
 }
 
 .post_content {
+  grid-area: content; /* The content goes in the sidebar area. */
   width: 60%; /* The post is not too wide. */
   margin: 0 auto; /* The post is in the middle. */
   padding: 2rem; /* There is space inside the post. */
@@ -150,6 +157,7 @@ h2 {
 }
 
 .sidebar {
+  grid-area: sidebar; /* The sidebar goes in the sidebar area. */
   display: flex; /* The sidebar things line up. */
   flex-direction: column; /* The sidebar things stack up and down. */
   align-items: center; /* The sidebar things are in the middle. */
