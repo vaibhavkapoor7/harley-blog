@@ -8,6 +8,9 @@ This project is a fully responsive blog homepage built using modern HTML5 and CS
 ## Live Demo
 🔗 [View Project on GitHub Pages]
 (https://github.com/vaibhavkapoor7/harley-blog.git)
+## How to reach my site
+## Clik on the link to reach the main page of the site
+https://vaibhavkapoor7.github.io/harley-blog/
 
 ## Features Overview
 
